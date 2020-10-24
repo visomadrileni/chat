@@ -1,0 +1,83 @@
+.input-wrapper{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    & > span { margin-top: 5px;}
+
+    .input-container{
+        position:relative;
+
+        .input{
+            height:50px;
+            width: 100%;
+            padding: 0px 20px;
+            border:none;
+            font-size:16px;
+            font-weight: 600;
+
+            &::ms-clear { display: none;}
+            &.default{
+                border-radius: 4px;
+                color:#b1b0b0;
+                background: #f1f2f4;
+
+                &::-webkit-input-placeholder{
+                    color:#b1b0b0;
+                    font-weight:400;
+                }
+
+                &:-moz-placeholder{
+                    color:#b1b0b0;
+                    font-weight:400;
+                }
+
+                &::-moz-placeholder{
+                    color:#b1b0b0;
+                    font-weight:400;
+                }
+
+                &:-ms-input-placeholder{
+                    color:#b1b0b0;
+                    font-weight:400;
+                }
+
+                &::-ms-input-placeholder{
+                    color:#b1b0b0;
+                    font-weight:400;
+                }
+
+                &::placeholder{
+                    color:#b1b0b0;
+                    font-weight:400;
+                }
+            }
+
+            &.search{
+                height: 50px;
+                padding: 0px 40px 0px 60px;
+                color: #ffffff;
+                background:#dadada;
+            }
+
+            &.clean{ border-radius: 0;}
+            &.input--error{ border: 2px solid #dcb2b2 ;}
+        }
+
+        .input-icon-container{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            top:0;
+            padding:20px;
+
+            &.icon-right{ right:0;}
+            &.icon-left{ left:0;}
+        }
+    }
+
+    .input-label-container{ margin-top: 5px; }
+}

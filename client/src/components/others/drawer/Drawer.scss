@@ -1,0 +1,30 @@
+.drawer{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    z-index: 1;
+    background-color: #ffffff;
+    transform: translate(-101%);
+    transition: all .2s ease-in-out;
+
+    &.open{
+        transform: translateX(0%);
+    }
+
+    .drawer-container{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+        width: 100%;
+
+        .header{
+            display: flex;
+            align-items: flex-end;
+            height: 140px;
+            width: 100%;
+            padding: 20px;
+            background: #4283ff;
+        }
+    }
+}

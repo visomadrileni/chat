@@ -1,0 +1,23 @@
+.actions-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 100%;
+    width: 30%;
+    min-width: 285px;
+    border-radius: 4px 0px 0px 4px;
+
+    .header-container{
+        min-height: 140px;
+        width: 100%;
+        padding: 20px;
+        border-radius: 4px 0px 0px 4px;
+
+        .header-content{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

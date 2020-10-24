@@ -1,0 +1,12 @@
+.tag{
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    &.success{
+        background: #58bd8f;
+    }
+}

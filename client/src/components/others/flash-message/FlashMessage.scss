@@ -1,0 +1,41 @@
+.flash-message-wrapper{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size:16px;
+    font-weight: 500;
+    animation: fadeIn 1s;
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    &.error{
+        color: #ffffff;
+        background:#da7079;
+    }
+
+    &.success{
+        color:#ffffff;
+        background: #58bd8f;
+    }
+
+    &.closed{ display: none;}
+
+    .flash-message{
+        display: block;
+        padding:0;
+        border:0;
+    }
+
+    .button-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

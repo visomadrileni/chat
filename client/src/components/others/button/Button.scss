@@ -1,0 +1,68 @@
+.button{
+    height: 50px;
+    border-radius:4px;
+    cursor: pointer;
+    font-size:18px;
+    font-weight: 500;
+    color: #ffffff;
+    box-shadow: 0 10px 20px rgba(101,101,101,0.19),0 5px 5px rgba(148, 148, 148, 0.23);
+
+    &.small{ height:35px; }
+    &.button-primary{
+        background: #0f5fff;
+        transition: background .5s ease,color .5s ease;
+
+        .spinner > div {
+            background: #ffffff;
+        }
+
+        &:hover{
+            background: #ffffff;
+            color: #0f5fff;
+
+            .spinner > div {
+                background: #0f5fff;
+            }
+        }
+    }
+
+    &.button-default {
+      background: #ffffff;
+      color: #0f5fff;
+      border: 2px solid #ffffff;
+      transition: background .5s ease,color .5s ease;
+
+      .spinner > div {
+          background: #0f5fff;
+      }
+
+      &.outline{
+          color: #0f5fff;
+          background: none;
+
+          &:hover{
+              color: #0f5fff;
+              background: #ffffff;
+          }
+      }
+    }
+
+    &.button-disabled{
+        color:#b1b0b0;
+        background:#f1f2f4;
+        cursor: not-allowed;
+        box-shadow: none;
+        transition: all .5s ease;
+    }
+
+    &.button-link{
+        height: 30px;
+        color: #0f5fff;
+        background: none;
+        box-shadow: none;
+    }
+
+    &:active{
+        transform: translateY(2px);
+    }
+}

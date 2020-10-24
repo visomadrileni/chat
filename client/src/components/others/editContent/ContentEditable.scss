@@ -1,0 +1,13 @@
+.content-editable{
+    position: relative;
+    max-height: 100px;
+    min-height: 46px;
+    width: 100%;
+    padding: 10px 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #b1b0b0;
+    background: #f1f2f4;
+}

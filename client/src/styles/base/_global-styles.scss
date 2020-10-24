@@ -1,0 +1,49 @@
+.app{
+    position: relative;
+    height: 100%;
+    min-height: 100%;
+}
+
+.route-section{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+}
+
+.fade-enter{ opacity: 0.01;}
+
+.fade-enter.fade-enter-active{
+    opacity:1;
+    transition: opacity 300ms ease-in;
+}
+
+.fade-exit{ opacity: 1; }
+.fade-exit.fade-exit-active{
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
+
+.fadeIn{ animation: fadeIn .5s }
+
+.transition-group-container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.confirm-popup{
+    width: 360px;
+    padding: 40px;
+    border-radius: 4px;
+    color: #ffffff;
+    background: #0f5fff;
+    box-shadow: 0 20px 75px rgba(0,0,0,0.23);
+
+    .buttons-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

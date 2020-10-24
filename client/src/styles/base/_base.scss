@@ -1,0 +1,60 @@
+*,
+*:after,
+*:before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    height:100%;
+    box-sizing: inherit;
+    user-select: none;
+    color: #b1b0b0;
+    font-size: 16px;
+}
+
+body{
+    height:100%;
+    line-height: 1.5;
+    color: #b1b0b0;
+    background: #f1f2f4;
+    font-size: 16px;
+    font-family:'Montserrat', sans-serif;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: none;
+}
+
+input,textarea{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{ margin:0;}
+h1{
+    font-size:32px;
+    font-weight: 600;
+}
+
+ol li,
+ul li{
+    list-style: none;
+}
+
+a{ text-decoration: none; }
+img{ max-width: 100%; }
+
+button{
+    border:0;
+    padding:0;
+    line-height: normal;
+    outline: none;
+    color: inherit;
+    font: inherit;
+    background: none;
+    overflow: visible;
+}
+
+[contenteditable]{
+    user-select: text;
+}

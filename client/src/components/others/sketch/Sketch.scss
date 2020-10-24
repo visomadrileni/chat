@@ -1,0 +1,32 @@
+.sketch-wrapper{
+    margin: 4px 0;
+
+    .sketch{
+        height:40px;
+        width:40px;
+        background: #dadada;
+        background-image: linear-gradient(to right,#d8d8d8 0%,#bdbdbd 20%,#d8d8d8 40%,#dd88dd 100%);
+        background-image: 800px 104px;
+        animation: forwards infinite sketchShimmer linear 1s;
+
+        @keyframes sketchShimmer {
+            0% {
+                background-position: -468px 0
+            }
+            100% {
+                background-position: 468px 0
+            }
+        }
+
+       &.dark{
+           background: #ffffff;
+           background-image: linear-gradient(to right,#ffffff 0%,#dadada 20%,#ffffff 40%,#ffffff 100%);
+           background-repeat: no-repeat;
+           background-size: 800px 104px;
+       }
+
+       &.circle{
+           border-radius: 50%;
+       }
+    }
+}
